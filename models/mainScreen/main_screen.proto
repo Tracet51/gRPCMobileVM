@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+package mainScreen;
+
+service MainScreen {
+    rpc UpdateLabel(Entry) returns (LabelValue) {}
+}
+
+message Entry {
+    string Text = 1;
+}
+
+message LabelValue {
+    string Text = 1;
+}
